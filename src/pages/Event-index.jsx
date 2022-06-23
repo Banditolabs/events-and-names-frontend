@@ -1,7 +1,12 @@
 import EventsList from '../components/Event-index'
+import ControlBar from '../components/Controlbar'
 
-export default function AllEvents () {
+export default function AllEvents ({events, setShowEvent, getEvents,  }) {
     return (
-        <EventsList />
+        <div>
+        <EventsList events={events} setShowEvent={setShowEvent}  />
+        <ControlBar />
+        </div>
+        
     )
 }

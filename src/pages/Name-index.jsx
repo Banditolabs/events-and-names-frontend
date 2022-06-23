@@ -1,8 +1,13 @@
 import NamesList from '../components/Name-index'
+import ControlBar from '../components/Controlbar'
 
-export default function ListNames () {
+export default function ListNames ({events}) {
 
     return (
-        <NamesList />
+        <div>
+        <NamesList events={events}/>
+        <ControlBar />
+        </div>
+        
     )
 }
